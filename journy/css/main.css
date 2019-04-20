@@ -263,3 +263,83 @@ html{
 .howitworks3:hover{
 	background-image: url(../img/howitworks/Step3-V1.gif);
 }
+#testimonials{
+	background-image: url(../img/testimonials.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 980px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#experts{
+	background-image: url(../img/experts.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 900px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#why{
+	background-image: url(../img/why.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 649px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#pricing{
+	background-image: url(../img/pricing.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 1000px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#faq{
+	background-image: url(../img/faq.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 690px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#special-occasions{
+	background-image: url(../img/special-occasions.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 835px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#inspirations{
+	background-image: url(../img/inspirations.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 542px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#ready{
+	background-image: url(../img/ready.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 465px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#not-ready{
+	background-image: url(../img/not-ready.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 374px;
+	position: relative;
+	background-repeat:no-repeat;
+}
+#footer{
+	background-image: url(../img/footer.jpg);
+	background-size: 100%;
+	width: 1440px;
+	height: 488px;
+	position: relative;
+	background-repeat:no-repeat;
+}
