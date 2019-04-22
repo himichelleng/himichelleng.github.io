@@ -59,6 +59,10 @@ html{
 	scroll-behavior: smooth;
 }
 
+.btn{
+	border-radius: 2px;
+}
+
 .navbar{
 	height: 80px;
 	width: 1440px;
@@ -67,6 +71,7 @@ html{
 	     -o-transition: all .5s ease;
 	    -ms-transition: all .5s ease;
 	        transition: all .5s ease;
+	padding: .5rem 1rem !important;
 }
 
 .navbar-brand{
@@ -119,6 +124,12 @@ html{
   background-color: #FF5E5B ;
 }
 
+.navbar-light .btn-outline-light:hover{
+  color: #fff;
+  border-color: #122842;
+  background-color: #122842 ;
+}
+
 #media .carousel-indicators li:not(.active){
 	opacity: .3;
 }
@@ -164,8 +175,13 @@ html{
 	font-weight: 500;
 }
 
+.btn:not(.btn-link){
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
 .btn:not(.btn-sm){
-	padding: 1rem 2rem;
+	padding: 15px 30px;
 }
 
 .carousel{
@@ -224,12 +240,16 @@ a{
 	background-color: #FF5E5B;
 	border-color: #FF5E5B;
 }
-.btn-primary:hover{
+.btn-primary:not(.btn-reverse):hover, .btn-primary:not(.btn-reverse):active, .btn-primary:not(:disabled):not(.disabled):active{
 	background-color: #122842;
 	border-color: #122842;
 }
 
-
+.btn-primary.btn-reverse:hover, .btn-primary.btn-reverse:active, .btn-primary.btn-reverse:not(:disabled):not(.disabled):active{
+	background-color: #fff;
+	border-color: #fff;
+	color: #FF5E5B;
+}
 
 #media{
 	height: 250px;
@@ -456,6 +476,32 @@ a{
 	height: 50px;
 	margin-left: -50px;
 }
+.btn-outline-secondary {
+    color: #122842;
+    border-color: #122842;
+    background-color: #fff;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:not(:disabled):not(.disabled):active{
+	background-color: #122842;
+	border-color: #122842;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+	box-shadow: none;
+}
+
+.testimonial1 .btn-outline-secondary{
+	left: 130px;
+	top: 840px;
+	position: absolute;
+}
+
+.testimonial2 .btn-outline-secondary{
+	left: 130px;
+	top: 885px;
+	position: absolute;
+}
 
 #experts{
 	background-image: url(../img/experts.jpg);
@@ -464,6 +510,16 @@ a{
 	height: 900px;
 	position: relative;
 	background-repeat:no-repeat;
+}
+.meet-experts{
+	left: 230px;
+	top: 730px;
+	position: absolute;
+}
+.meet-team{
+	left: 830px;
+    top: 730px;
+	position: absolute;
 }
 #why{
 	background-image: url(../img/why.jpg);
@@ -481,6 +537,28 @@ a{
 	position: relative;
 	background-repeat:no-repeat;
 }
+#pricing .journy-lite{
+	left: 372px;
+	top: 354px;
+	position: absolute;
+}
+
+#pricing .journy-full{
+	left: 763px;
+    top: 354px;
+	position: absolute;
+}
+
+#pricing .free-advice{
+	left: 639px;
+    top: 840px;
+	position: absolute;
+}
+
+.btn-outline-secondary.focus, .btn-outline-secondary:focus{
+	box-shadow: none;
+}
+
 #faq{
 	padding: 90px 0;
 	background-color: #F5F8FC;
@@ -559,6 +637,66 @@ a{
 	position: relative;
 	background-repeat:no-repeat;
 }
+.inspirations-destination{
+	width: 180px;
+	height: 240px;
+	display: inline-block;
+}
+
+.inspirations-japan{
+	background-image: url(../img/inspirations/japan.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 130px;
+	top: 212px;
+	position: absolute;
+}
+
+.inspirations-italy{
+	background-image: url(../img/inspirations/italy.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 331px;
+	top: 212px;
+	position: absolute;
+}
+
+.inspirations-spain{
+	background-image: url(../img/inspirations/spain.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 530px;
+	top: 212px;
+	position: absolute;
+}
+
+.inspirations-taiwan{
+	background-image: url(../img/inspirations/taiwan.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 730px;
+	top: 212px;
+	position: absolute;
+}
+
+.inspirations-greece{
+	background-image: url(../img/inspirations/greece.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 930px;
+	top: 212px;
+	position: absolute;
+}
+
+.inspirations-austria{
+	background-image: url(../img/inspirations/austria.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 1130px;
+	top: 212px;
+	position: absolute;
+}
+
 #ready{
 	background-image: url(../img/ready/ready.jpg);
 	background-size: 100%;
@@ -567,6 +705,12 @@ a{
 	position: relative;
 	background-repeat:no-repeat;
 }
+#ready .get-started{
+	left: 231px;
+	top: 251px;
+	position: absolute;
+}
+
 .ready-itinerary{
 	background-image: url(../img/ready/ready-itinerary.jpg);
 	background-size: 100%;
@@ -594,6 +738,55 @@ a{
 	position: relative;
 	background-repeat:no-repeat;
 }
+#not-ready .sample-itinerary{
+	left: 623px;
+	top: 234px;
+	position: absolute;
+}
+
+#sample-itinerary-modal .modal-dialog{
+	max-width: 725px;
+}
+#sample-itinerary-modal .modal-header{
+	border-bottom: none;
+}
+#sample-itinerary-modal .modal-content{
+	width: 725px;
+	height: 519px;
+	background-image: url(../img/sample-itinerary-popup.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-color: rgba(255,255,255,0);
+	border: none; 
+    border-radius: 0; 
+}
+.modal-backdrop{
+	background-color: #fff;
+}
+
+
+#sample-itinerary-modal .modal-dialog .close{
+	background-image: url(../img/modal-close.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	width: 21px;
+	height: 21px;
+	left: -25px;
+	position: relative;
+	top: 18px;
+}
+
+#sample-itinerary-modal .modal-dialog .close span{
+	display: none;
+}
+#sample-itinerary-modal.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
 #footer{
 	background-image: url(../img/footer.jpg);
 	background-size: 100%;

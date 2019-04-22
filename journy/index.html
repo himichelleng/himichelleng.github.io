@@ -52,13 +52,13 @@
             <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Travel inspirations</a>
+            <a class="nav-link" href="https://gojourny.com/stories/" target="_blank">Travel inspirations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Log in</a>
+            <a class="nav-link" href="#">Sign in</a>
           </li>
         </ul>
-        <a class="nav-link call" href="#">Talk to a travel expert for free</a>
+        <a class="nav-link call" href="https://calendly.com/gojourny/travelconsultation" target="_blank">Talk to a travel expert for free</a>
         <a class="btn btn-sm btn-outline-light" href="https://gojourny.com/itinerary_request/new" target="_blank" role="button">Get Started</a>
 
       </div>
@@ -209,14 +209,14 @@
       <div class="carousel-item active">
         <div class="testimonial testimonial1">
         	<a href="https://gojourny.com/new_itineraries/qwq" target="_blank" class="testimonial1-map"></a>
-        	<a href="https://gojourny.com/new_itineraries/qwq" target="_blank" class="testimonial1-button"></a>
+          <a class="btn btn-outline-secondary" href="https://gojourny.com/new_itineraries/qwq" target="_blank" role="button">See Zach’s itinerary</a>
         </div>
 
       </div>
       <div class="carousel-item">
         <div class="testimonial testimonial2">
         	<a href="https://gojourny.com/new_itineraries/8OKk" target="_blank" class="testimonial2-map"></a>
-        	<a href="https://gojourny.com/new_itineraries/8OKk" target="_blank" class="testimonial2-button"></a>
+        	<a class="btn btn-outline-secondary" href="https://gojourny.com/new_itineraries/8OKk" target="_blank" class="button">See Julia's itinerary</a>
         </div>
       </div>
     </div>
@@ -230,10 +230,15 @@
       </a>
  	</div>
   <div id="experts">
+    <a class="btn btn-outline-secondary meet-experts" href="https://gojourny.com/journyists" target="_blank" role="button">Meet all experts</a>
+    <a class="btn btn-outline-secondary meet-team" href="https://gojourny.com/about" target="_blank" role="button">Meet our team</a>
   </div>
   <div id="why">
   </div>
   <div id="pricing">
+    <a class="btn btn-outline-secondary journy-lite" href="https://gojourny.com/itinerary_request/new" target="_blank" role="button">Select Journy Lite</a>
+    <a class="btn btn-primary journy-full" href="https://gojourny.com/itinerary_request/new" target="_blank" role="button">Select Journy Full</a>
+    <a class="btn btn-outline-secondary free-advice" href="https://calendly.com/gojourny/travelconsultation" target="_blank" role="button">Get free advice</a>
   </div>
   <div id="faq">
   	<h2 class="text-center">FAQ</h2>
@@ -364,13 +369,32 @@
   <div id="special-occasions">
   </div>
   <div id="inspirations">
+    <a class="inspirations-japan inspirations-destination" href="http://experiences.gojourny.com/japan/" target="_blank"></a>
+    <a class="inspirations-italy inspirations-destination" href="http://experiences.gojourny.com/italy/" target="_blank"></a>
+    <a class="inspirations-spain inspirations-destination" href="http://experiences.gojourny.com/spain/" target="_blank"></a>
+    <a class="inspirations-taiwan inspirations-destination" href="http://taiwan.gojourny.com/" target="_blank"></a>
+    <a class="inspirations-greece inspirations-destination" href="http://greece.gojourny.com/" target="_blank"></a>
+    <a class="inspirations-austria inspirations-destination" href="http://austria.gojourny.com/" target="_blank"></a>
   </div>
   <div id="ready">
+    <a class="btn btn-primary get-started btn-reverse" href="https://gojourny.com/itinerary_request/new" target="_blank" role="button">Get Started</a>
     <div class="ready-itinerary">
         <video id="ready-itinerary-video" class="active" loop="loop" muted="muted" autoplay="autoplay" style="transform: matrix(1, 0, 0, 1, 0, -162);"><source src="img/ready/20190319_Journy_Overview.mp4"></video>
     </div>
   </div>
   <div id="not-ready">
+    <button type="button" class="btn btn-primary sample-itinerary" data-toggle="modal" data-target="#sample-itinerary-modal" href="https://calendly.com/gojourny/travelconsultation" target="_blank" role="button">Get sample itinerary</button>
+  </div>
+  <div class="modal fade" id="sample-itinerary-modal" tabindex="-1" role="dialog" aria-labelledby="sampleItineraryModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="footer">
   </div>
@@ -399,6 +423,9 @@
 	    document.getElementById("navbar").classList.add('navbar-dark');
 	    document.getElementById("navbar").classList.remove('navbar-light');
 	  }
+    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+      $('#sample-itinerary-modal').modal('show');
+    }
 	}
 </script>
     </body>
