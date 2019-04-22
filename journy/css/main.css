@@ -1,12 +1,24 @@
 @font-face {
   font-family: "Avenir";
-  src: url(../fonts/Avenir-Medium.ttf);
+  src: url(../fonts/Avenir-Roman.ttf);
   font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir-Oblique.ttf);
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
   font-family: "Avenir";
   src: url(../fonts/Avenir-Heavy.ttf);
   font-weight: 500;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/Avenir-HeavyOblique.ttf);
+  font-weight: 500;
+  font-style: italic;
 }
 @font-face {
   font-family: "Noe Display";
@@ -33,6 +45,12 @@ body{
 	padding-bottom: 0;
 	width: 1440px;
 	max-width: 1440px;
+	color: #122842;
+}
+
+body a:hover{
+	text-decoration: underline;
+	color: #FF5E5B;
 }
 
 html{
@@ -151,7 +169,7 @@ html{
 
 
 .carousel-static{
-	top: 400px;
+	top: 420px;
 	left: 130px;
 	z-index: 10;
 	color: #ffffff;
@@ -186,6 +204,9 @@ html{
 	width: 50px;
 	height: 50px;
 }
+
+
+
 .btn-group-lg>.btn, .btn-lg{
 	border-radius: 2px;
 }
@@ -289,6 +310,10 @@ a{
 	position: relative;
 	background-repeat:no-repeat;
 }
+
+#howitworks1-video{
+	opacity: 0;
+}
 .howitworks1{
 	background-image: url(../img/howitworks/howitworks1.png);
 	background-size: 100%;
@@ -338,14 +363,93 @@ a{
 	padding-right: 1rem;
 	padding-left: 1rem;
 }
+
+
 #testimonials{
-	background-image: url(../img/testimonials.jpg);
-	background-size: 100%;
 	width: 1440px;
 	height: 980px;
 	position: relative;
+}
+
+#testimonials .carousel-item{
+	height: 980px;
+	transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out,-webkit-transform 1s ease-in-out;
+}
+.testimonial{
+	width: 1440px;
+	height: 980px;
+	position: relative;
+}
+
+.testimonial1-map{
+	width: 780px;
+	height: 404px;
+	background-image: url(../img/testimonials/zach-itinerary-map.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 530px;
+	position: absolute;
+	top: 176px;
+}
+.testimonial1-button{
+	width: 188px;
+	height: 50px;
+	background-image: url(../img/testimonials/zach-itinerary-button.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 130px;
+	position: absolute;
+	top: 840px;
+}
+.testimonial2-map{
+	width: 780px;
+	height: 404px;
+	background-image: url(../img/testimonials/julia-itinerary-map.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 530px;
+	position: absolute;
+	top: 176px;
+}
+.testimonial2-button{
+	width: 188px;
+	height: 50px;
+	background-image: url(../img/testimonials/julia-itinerary-button.png);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	left: 130px;
+	position: absolute;
+	top: 885px;
+}
+.testimonial1{
+	background-image: url(../img/testimonials/testimonial1.jpg);
+	background-size: 100%;
 	background-repeat:no-repeat;
 }
+.testimonial2{
+	background-image: url(../img/testimonials/testimonial2.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+
+#testimonials .carousel-control-next-icon{
+	background-image: url(../img/testimonials/testimonials-carousel-button-next.png);
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	margin-left: 50px;
+}
+
+#testimonials .carousel-control-prev-icon{
+	background-image: url(../img/testimonials/testimonials-carousel-button-prev.png);
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	margin-left: -50px;
+}
+
 #experts{
 	background-image: url(../img/experts.jpg);
 	background-size: 100%;
@@ -371,12 +475,66 @@ a{
 	background-repeat:no-repeat;
 }
 #faq{
-	background-image: url(../img/faq.jpg);
-	background-size: 100%;
+	padding: 90px 0;
+	background-color: #F5F8FC;
 	width: 1440px;
-	height: 690px;
+	min-height: 690px;
 	position: relative;
-	background-repeat:no-repeat;
+}
+
+#faq-content{
+	max-width: 780px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#faq .plus{
+	background-image: url(../img/faq/plus.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	height: 20px;
+	right: 0;
+	top: 30px;
+}
+
+#faq .plus:not(.collapsed){
+	background-image: url(../img/faq/minus.png);
+}
+
+#faq .card{
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(18, 40, 66, .2);
+}
+
+#faq .card:last-of-type {
+	border-bottom: none;
+	margin-bottom: 30px;
+}
+
+#faq .card-header{
+	background: none;
+	border: none;
+	padding: .75rem 0rem;
+}
+
+#faq .card-body{
+  padding: 0 0 2rem 0;
+	max-width: 700px;
+	color: #122842;
+}
+#faq .btn-link{
+	color: #122842;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 1rem 0;
+}
+
+#faq .btn-link:not(.collapsed){
+	font-weight: 500;
 }
 #special-occasions{
 	background-image: url(../img/special-occasions.jpg);
