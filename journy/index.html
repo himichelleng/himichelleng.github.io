@@ -423,8 +423,9 @@
 	    document.getElementById("navbar").classList.add('navbar-dark');
 	    document.getElementById("navbar").classList.remove('navbar-light');
 	  }
-    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-      $('#sample-itinerary-modal').modal('show');
+    if ((!$('#sample-itinerary-modal').hasClass("shown")) && ((document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000))) {
+      $('#sample-itinerary-modal').modal("show");
+      $('#sample-itinerary-modal').addClass("shown");
     }
 	}
 </script>
