@@ -560,13 +560,32 @@ a{
 	background-repeat:no-repeat;
 }
 #ready{
-	background-image: url(../img/ready.jpg);
+	background-image: url(../img/ready/ready.jpg);
 	background-size: 100%;
 	width: 1440px;
-	height: 465px;
+	height: 391px;
 	position: relative;
 	background-repeat:no-repeat;
 }
+.ready-itinerary{
+	background-image: url(../img/ready/ready-itinerary.jpg);
+	background-size: 100%;
+	width: 480px;
+	height: 474px;
+	position: relative;
+	background-repeat:no-repeat;
+	left: 730px;
+	top: 63px;
+}
+#ready-itinerary-video{
+	width: 600px;
+	height: auto;
+	margin-top: 157px;
+	margin-left: -60px;
+}
+/*.ready-itinerary:hover{
+	background-image: url(../img/ready/20190319_Journy_Day_View.mp4);
+}*/
 #not-ready{
 	background-image: url(../img/not-ready.jpg);
 	background-size: 100%;
