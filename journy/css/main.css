@@ -38,6 +38,8 @@ h1, h2, h3, h4, h5{
 h4{
 	font-size: 18px;
 	line-height: 1.4;
+	font-family: "Avenir", san-serif;
+	font-weight: 500;
 }
 body{
 	font-family: "Avenir", san-serif;
@@ -117,6 +119,9 @@ html{
   background-color: #FF5E5B ;
 }
 
+#media .carousel-indicators li:not(.active){
+	opacity: .3;
+}
 
 .hero1{
 	background-image: url(../img/hero/hero-bg1.jpg);
@@ -231,9 +236,9 @@ a{
 }
 #media .carousel-item{
 	height: 250px;
-	transition: -webkit-transform 1s ease-in-out;
-	transition: transform 1s ease-in-out;
-	transition: transform 1s ease-in-out,-webkit-transform 1s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	transition: transform .5s ease-in-out;
+	transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out;
 }
 #media.carousel{
 	background: #F5F8FC;
@@ -241,10 +246,11 @@ a{
 
 #media .carousel-caption{
 	color: #122842;
-	top: 60px;
+	bottom: 80px;
 	padding-top:0;
 	width: 780px;
 	margin: 0 auto;
+	vertical-align: middle;
 }
 
 #media .carousel-indicators li{
@@ -252,6 +258,7 @@ a{
 	height: 27px;
 	margin-right: 50px;
 	background: none;
+	transition: opacity .1s ease;
 }
 #media .carousel-indicators li:nth-child(1){
 	background-image: url(../img/media/travel-leisure.svg);
