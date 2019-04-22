@@ -35,7 +35,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
       <a class="navbar-brand" href="#">Journy</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,8 @@
             <a class="nav-link" href="#">Log in</a>
           </li>
         </ul>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Get Started</button>
+        <a class="nav-link call" href="#">Talk to a travel expert for free</a>
+        <button class="btn btn-sm btn-outline-light" type="submit">Get Started</button>
 
       </div>
     </nav>
@@ -232,5 +233,22 @@
   </footer> -->
 </main>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script></body>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+	    document.getElementById("navbar").style.height = "50px";
+	    document.getElementById("navbar").classList.add('navbar-light');
+	    document.getElementById("navbar").classList.remove('navbar-dark');
+
+	  } else {
+	    document.getElementById("navbar").style.height = "80px";
+	    document.getElementById("navbar").classList.add('navbar-dark');
+	    document.getElementById("navbar").classList.remove('navbar-light');
+	  }
+	}
+</script>
+    </body>
 </html>
