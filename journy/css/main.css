@@ -343,6 +343,7 @@ a{
 }
 .howitworks1{
 	background-image: url(../img/howitworks/howitworks1.png);
+	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 320px;
 	height: 353px;
@@ -358,6 +359,7 @@ a{
 }
 .howitworks2{
 	background-image: url(../img/howitworks/howitworks2.png);
+	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 336px;
 	height: 334px;
@@ -375,6 +377,7 @@ a{
 }
 .howitworks3{
 	background-image: url(../img/howitworks/howitworks3.png);
+	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 274px;
 	height: 360px;
