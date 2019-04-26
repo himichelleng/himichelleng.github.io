@@ -59,6 +59,9 @@ html{
 	scroll-behavior: smooth;
 }
 
+.preload{
+	display: none;
+}
 .btn{
 	border-radius: 2px;
 }
@@ -333,7 +336,7 @@ a{
 	background-image: url(../img/howitworks/howitworks.jpg);
 	background-size: 100%;
 	width: 1440px;
-	height: 961px;
+	height: 861px;
 	position: relative;
 	background-repeat:no-repeat;
 }
@@ -344,12 +347,12 @@ a{
 .howitworks1{
 	background-image: url(../img/howitworks/howitworks1.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 320px;
-	height: 353px;
+	background-size: contain;
+	width: 304px;
+	height: 333px;
 	position: absolute;
-	top:  197px;
-	left: 160px;
+	top:  223px;
+	left: 166px;
 }
 /*.howitworks1:hover{
 	background-image: url(../img/howitworks/Step1-V2.gif);
@@ -360,12 +363,12 @@ a{
 .howitworks2{
 	background-image: url(../img/howitworks/howitworks2.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 336px;
-	height: 334px;
+	background-size: contain;
+	width: 311px;
+	height: 272px;
 	position: absolute;
-	top: 198px;
-	left: 551px;
+	top: 247px;
+	left: 565px;
 }
 /*.howitworks2:hover{
 	background-image: url(../img/howitworks/Step2-V2.gif);
@@ -378,12 +381,12 @@ a{
 .howitworks3{
 	background-image: url(../img/howitworks/howitworks3.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 274px;
-	height: 360px;
+	background-size: contain;
+	width: 256px;
+	height: 336px;
 	position: absolute;
 	left: 962px;
-	top: 194px;
+	top: 220px;
 }
 /*.howitworks3:hover{
 	background-image: url(../img/howitworks/Step3-V1.gif);
