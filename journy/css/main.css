@@ -51,7 +51,8 @@ body{
 }
 
 body a:hover{
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	text-decoration: none;
 	color: #FF5E5B;
 }
 
@@ -257,6 +258,16 @@ a{
 #media{
 	height: 250px;
 }
+
+#media .quote{
+	font-family: "Noe Display", serif;
+	font-weight: bold;
+	font-size: 72px;
+	opacity: .1;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+}
 #media .carousel-item{
 	height: 250px;
 	transition: -webkit-transform 0.5s ease-in-out;
@@ -269,7 +280,7 @@ a{
 
 #media .carousel-caption{
 	color: #122842;
-	bottom: 80px;
+	bottom: 90px;
 	padding-top:0;
 	width: 780px;
 	margin: 0 auto;
@@ -286,42 +297,50 @@ a{
 #media .carousel-indicators li:nth-child(1){
 	background-image: url(../img/media/travel-leisure.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 85px;
 	height: 27px;
 }
 #media .carousel-indicators li:nth-child(2){
-	background-image: url(../img/media/cool-hunting.svg);
+	background-image: url(../img/media/business-insider.svg);
 	background-repeat: no-repeat;
-	width: 75px;
-	height: 28px;
+	background-size: contain;
+	width: 116px;
+	height: 53px;
+	background-position-y: -15px;
 }
 #media .carousel-indicators li:nth-child(3){
 	background-image: url(../img/media/mashable.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 117px;
 	height: 20px;
 }
 #media .carousel-indicators li:nth-child(4){
-	background-image: url(../img/media/techcrunch.svg);
+	background-image: url(../img/media/forbes.svg);
 	background-repeat: no-repeat;
-	width: 124px;
-	height: 17px;
+	background-size: contain;
+	width: 87px;
+	height: 23px;
 }
 #media .carousel-indicators li:nth-child(5){
 	background-image: url(../img/media/time.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 76px;
-	height: 24px;
+	height: 23px;
 }
 #media .carousel-indicators li:nth-child(6){
 	background-image: url(../img/media/martha-stewart.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 124px;
 	height: 32px;
 }
 #media .carousel-indicators li:nth-child(7){
 	background-image: url(../img/media/wsj.svg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 49px;
 	height: 25px;
 }
@@ -536,14 +555,21 @@ a{
 }
 .meet-team{
 	left: 830px;
-    top: 730px;
+    top: 744px;
 	position: absolute;
+	color: #122842;
+	font-size: 14px;
+	font-weight: bold;
+}
+.see-full-faq{
+	font-weight: bold;
+	color: #122842;
 }
 #why{
 	background-image: url(../img/why.jpg);
 	background-size: 100%;
 	width: 1440px;
-	height: 649px;
+	height: 599px;
 	position: relative;
 	background-repeat:no-repeat;
 }
@@ -551,25 +577,25 @@ a{
 	background-image: url(../img/pricing.jpg);
 	background-size: 100%;
 	width: 1440px;
-	height: 1000px;
+	height: 1050px;
 	position: relative;
 	background-repeat:no-repeat;
 }
 #pricing .journy-lite{
-	left: 372px;
-	top: 354px;
+	left: 431px;
+	top: 384px;
 	position: absolute;
 }
 
 #pricing .journy-full{
-	left: 763px;
-    top: 354px;
+	left: 831px;
+    top: 384px;
 	position: absolute;
 }
 
 #pricing .free-advice{
 	left: 639px;
-    top: 840px;
+    top: 890px;
 	position: absolute;
 }
 
