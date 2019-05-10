@@ -419,6 +419,35 @@ a{
 	font-size: 14px;
 }
 
+.navbar-light .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:hover{
+	color: #FF5E5B;
+}
+
+.nav-link.call:before{
+	content: ' ';
+	display: block;
+	background-color: #fff;
+	-webkit-mask-image: url(../img/phone-icon.svg);
+	mask-image: url(../img/phone-icon.svg);
+	background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 4px;
+
+}
+
+.nav-link.call:hover{
+	/*background-color: #FF5E5B;*/
+	color: #FF5E5B;
+}
+.nav-link.call:hover:before{
+	background-color: #FF5E5B;
+}
+
 .navbar-brand{
 	margin-right: 3rem;
 }
@@ -427,6 +456,7 @@ a{
 	padding-right: 1rem;
 	padding-left: 1rem;
 }
+
 
 
 #testimonials{
