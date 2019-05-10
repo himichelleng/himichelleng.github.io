@@ -440,6 +440,10 @@ a{
 
 }
 
+.navbar-light .nav-link.call:before{
+	background-color: #122842;
+}
+
 .nav-link.call:hover{
 	/*background-color: #FF5E5B;*/
 	color: #FF5E5B;
